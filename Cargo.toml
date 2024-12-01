@@ -1,0 +1,17 @@
+[package]
+name = "aoc2024"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+divan = { version = "0.1.16", optional = true }
+clap = { version = "4.5.21", features = ["derive"] }
+anyhow = "1.0.93"
+itertools = "0.13.0"
+indoc = "2.0.5"
+
+[[bench]]
+name = "benches"
+harness = false
